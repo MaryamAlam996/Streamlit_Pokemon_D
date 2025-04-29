@@ -1,5 +1,6 @@
 import streamlit as st
-from extract import extract_from_csv
+from data_processing import extract_from_csv
+from data_processing import add_url_as_new_column
 
 
 def main():    
@@ -17,7 +18,8 @@ def main():
     df = extract_from_csv('data/pokemon.csv')
     print('Data extraction complete')
     
-
-
+    df = add_url_as_new_column(df)
+    st.dataframe(df)
+    
 if __name__ == "__main__":
     main()
