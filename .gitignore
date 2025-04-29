@@ -51,6 +51,3 @@ build/
 dist/
 *.egg-info/
 .eggs/
-
-# Allow the test folder (if previously ignored)
-!test/
