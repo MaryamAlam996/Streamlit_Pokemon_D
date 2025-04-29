@@ -40,10 +40,25 @@ def clean_categorical_columns(df):
     return df
 
 
+def get_image_url(pokedex_id: int) -> str:
+    pokedex_id = str(pokedex_id).zfill(3)
+    image_url = f"https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/images/{pokedex_id}.png"
+    return image_url
+
+
+def add_url_as_new_column(df):
+    df['image_url'] = df['pokedex_number'].apply(lambda x: get_image_url(x))
+    return df
+
+
 def extract_and_clean_data(file_path):
     """ Extract and clean Pokemon dataset"""
     df = extract_from_csv(file_path)
     df = drop_columns(df)
     df = drop_empty_rows(df)
     df = clean_categorical_columns(df)
+    df = add_url_as_new_column(df)
     return df
+
+
+

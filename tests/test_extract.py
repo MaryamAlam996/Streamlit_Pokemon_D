@@ -1,9 +1,7 @@
 import pandas as pd
 import pytest
 
-from app.extract import sum
-from app.extract import extract_from_csv
-
+from app.data_processing import extract_from_csv
 
 # # Test pytest
 # def test_if_test_folder_works():
