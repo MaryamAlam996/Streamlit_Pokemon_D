@@ -1,9 +1,11 @@
 import pandas as pd
 
 
-def load_data(filepath):
-    """Load the Pokemon dataset from a CSV file."""
-    return pd.read_csv(filepath)
+def extract_from_csv(file_path: str) -> pd.DataFrame:
+    try:
+        return pd.read_csv(file_path)
+    except Exception as e:
+        raise Exception(f'An unexpected error occurred.\nError: {e}.')
 
 
 def drop_columns(df):
@@ -38,9 +40,9 @@ def clean_categorical_columns(df):
     return df
 
 
-def load_and_clean_data(filepath):
-    """ Load and clean Pokemon dataset"""
-    df = load_data(filepath)
+def extract_and_clean_data(file_path):
+    """ Extract and clean Pokemon dataset"""
+    df = extract_from_csv(file_path)
     df = drop_columns(df)
     df = drop_empty_rows(df)
     df = clean_categorical_columns(df)
