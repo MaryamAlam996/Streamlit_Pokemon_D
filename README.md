@@ -20,5 +20,5 @@ For the sake of data consistency, an index has been added to the dataset.<br>
 A column for image url was created, to streamline fetching the images for user requested Pokemon.
 ## Final app
 
-Deployed URL: <br>
-******IMAGE********
+Deployed URL: 
+[Pokemon app](https://maryamalam996-streamlit-pokemon-d-apppokemon-main-xvkqnz.streamlit.app/)
