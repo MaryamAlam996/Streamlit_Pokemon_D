@@ -7,7 +7,7 @@ from transform_image import  get_image
 
 #st.text_input(label, value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible")
 
-df = extract_and_clean_data('../data/pokemon.csv')
+df = extract_and_clean_data('data/pokemon.csv')
 #print(df)
 
 
