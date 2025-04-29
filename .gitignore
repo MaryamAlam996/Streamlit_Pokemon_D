@@ -1,0 +1,53 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+streamlit-env/
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+
+# Streamlit specific
+.streamlit/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compiled files
+*.o
+*.so
+*.dll
+*.exe
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+
+# Distribution/build files
+build/
+dist/
+*.egg-info/
+.eggs/
