@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from app.transform_image import get_image_url
+from app.data_processing import get_image_url
 
 # Set parameters for image url test
 @pytest.mark.parametrize("id, expected", [
