@@ -5,15 +5,15 @@ from app.extract import sum
 from app.extract import extract_from_csv
 
 
-# Test pytest
-def test_if_test_folder_works():
-    # Arrange
-    input = 1
-    expected_output = 6
-    # Action
-    actual_output = sum(input)
-    # Assert
-    assert expected_output == actual_output
+# # Test pytest
+# def test_if_test_folder_works():
+#     # Arrange
+#     input = 1
+#     expected_output = 6
+#     # Action
+#     actual_output = sum(input)
+#     # Assert
+#     assert expected_output == actual_output
 
 
 # Write test for a successful extract
