@@ -1,11 +1,7 @@
 import pandas as pd
 import pytest
 
-from app.transform_image import get_image_url 
-
-from PIL import Image
-import requests
-from unittest.mock import patch, Mock
+from app.transform_image import get_image_url
 
 # Set parameters for image url test
 @pytest.mark.parametrize("id, expected", [
@@ -23,5 +19,4 @@ def test_get_image_url_success(id, expected):
     actual_output = get_image_url(input)
     # Assert
     assert actual_output == expected_output
-   
 
